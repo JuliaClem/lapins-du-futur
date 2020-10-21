@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Mouvement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Attributs
+    public float Speed = 5.0f;
 
-    // Update is called once per frame
-    void Update()
+     void Update() 
     {
+        float axisZ = Input.GetAxis("Vertical");
+        float axisX = Input.GetAxis("Horizontal");
         
+        // Marche avant
+        if (axisZ > 0)
+        {
+            transform.Translate(transform.forward * Speed * axisZ * Time.deltaTime);
+            Debug.Log("Touche Up Arrow detectée.");
+        }
     }
 }
