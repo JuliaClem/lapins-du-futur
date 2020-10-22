@@ -7,7 +7,7 @@ InputManager:
   m_Axes:
   - serializedVersion: 3
     m_Name: Horizontal
-    descriptiveName: 
+    descriptiveName: isRunnig
     descriptiveNegativeName: 
     negativeButton: q
     positiveButton: d
@@ -23,7 +23,7 @@ InputManager:
     joyNum: 0
   - serializedVersion: 3
     m_Name: Vertical
-    descriptiveName: 
+    descriptiveName: isRunnig
     descriptiveNegativeName: 
     negativeButton: down
     positiveButton: up
